@@ -6,139 +6,240 @@
     <meta name="description" content="Learn more about me, my skills, experience, and interests.">
     <meta name="keywords" content="About Me, Portfolio, Skills, Experience">
     <meta name="author" content="Erick Chomba">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Erick Chomba</title>
     
 </head>
-<body>
-    <div id="header">
-        <div class="container">
-        <nav>
-            <img src="images/logo.png" class="logo">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#experience">Experience</a>
-            <a href="#contact">Contact</a>
-        </nav>
-         </div>
-         <div class="header-text">
-            <p>IT Professional | Software Developer | Systems Administrator</p>
-            <h1>Hi, I'm <span>Chomba</span><br>Developer from Nairobi, Kenya.</h1>
+    <body>
+        <div id="header">
+            <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <a href="#about">About Me</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            </div>
+            <div class="header-text">
+                <p>IT Professional | Software Developer | Systems Administrator</p>
+                <h1>Hi, I'm <span>Chomba</span><br>Developer from Nairobi, Kenya.</h1>
+            </div>
         </div>
-    </div>
-    <!--About me section -->
-  
+        <!--About me section -->
+        <a id="about"></a>
         <div class="about">
             <div class="row">
-                    <div class="about-col-1">
-                        <img src="images/IMG_1494.JPEG" alt="chombas image">
-                    </div>
-                    <div class="about-col-2">
-                        <h1 class="sub-title">About Me</h1>
-                        <p>I am a skilled IT professional with experties in networking, programming, and mid-level managment. 
-                            With a strong background in SQL, MySQL, PHP, HTML, CSS, JAVA and JavaScript,
-                            I have wokrked on various IT projects, including CRM customization , logistics managment, and business continuity planning. 
-                            I am passionate about improving operational efficiencies through technology and aligning IT strategies with business goals.</p>
-                            <div class="tab-titles">
-                                <p class="tab-links active-link" onclick="opentab('Skills & Expertise')">Skills & Expertise</p>
-                                <p class="tab-links"onclick="opentab('key projects')">key projects</p>
-                                <p class="tab-links"onclick="opentab('certifications')">certifications</p>
-                            </div>
-                            <div class="tab-contents active-tab" id="Skills & Expertise">
-                                
-                                    <ul>
-                                        <li><span>Programming Languages:</span> <br>PHP, JavaScript, Java, CSS, MySQL, HTML</li>
-                                        <li><span>Operating Systems:</span><br> linux, Windows,</li>
-                                        <li><span>IT Infrastructure & Networking:</span><br> Server virtualization(ESXi, Proxmox), servers(HP proliant), Sophos XGS, 3CX and yestar PBX systems</li>
-                                        <li><span>Software & Platforms:</span><br>Microsoft 365, Microsoft Power apps, Microsoft Azure, Microsoft power bi, Microsoft SQL server, Dynamics 365 CRM, SYSPRO ERP(Administrator)</li>
-                                        <li><span>Cybersecurity:</span><br> Sophos Certification, Network Security, Firewall Management</li>
-                                        <li><span>Project Management:</span> <br>IT Budgeting, Business Process Automation, IT software develpment, IT Talent Development</li>
-                            
-                                    </ul>
-                            </div>
-
-                            <div class="tab-contents"id="key projects">
-                                
-                                <ol>
-                                    <li><span>CRM Customization</span></li>
-                                        <ul>
-                                            <li>Successfully implemented and customized Microsoft Dynamics CRM to streamline customer managment and automate workflows.</li>
-                                            <li>Developed JavaScript functions for form events, calculations, and data retrieval</li>
-                                        </ul>
-                                    <li><span>Logistics Management System</span></li>
-                                        <ul>
-                                            <li>Led the Development and deployment of an in house logistics managment system to track and optimize company assets.</li>
-                                            <li>Buil an backend in PHP and a JavaScript-powerd frontend with interactive forms.</li>
-                                        </ul>
-                                    <li><span>Business Continuity Planning for IT systems</span></li>
-                                        <ul>
-                                            <li>Developed a comprehensive business continuity plan involving Infrastructure, network security and disaster recovery for critical IT systems</li>
-                                            <li>Drafted and implemented IT Polycies</li>
-                                        </ul>
-                                    <li><span>Infrastracture Modernization</span></li>
-                                        <ul>
-                                            <li>Integrated new IPs into the company’s main network, improving connectivity and network performance.</li>
-                                            <li>Upgraded and optimized hardware for better efficiency and security.</li>
-                                        </ul>
-                                    <li><span>Trade Shops Expansion</span></li>
-                                        <ul>
-                                            <li>Explored and strategized IT solutions to support the growth of Danco Plastics' trade shops in  Ruiru and Mombasa</li>
-                                            <li>Evaluated ERP and CRM integration for better inventory and customer management.</li>
-                                        </ul>
-                                </ol>
+                        <div class="about-col-1">
+                            <img src="images/developer.png" alt="chombas image">
                         </div>
-
-
-                        <div class="tab-contents" id="certifications">
+                        <div class="about-col-2">
+                            <h1 class="sub-title">About Me</h1>
+                            <p>I am a skilled IT professional with experties in networking, programming, and mid-level managment. 
+                                With a strong background in SQL, MySQL, PHP, HTML, CSS, JAVA and JavaScript,
+                                I have wokrked on various IT projects, including CRM customization , logistics managment, and business continuity planning. 
+                                I am passionate about improving operational efficiencies through technology and aligning IT strategies with business goals.</p>
+                                <div class="tab-titles">
+                                    <p class="tab-links active-link" onclick="opentab('Skills & Expertise')">Skills & Expertise</p>
+                                    <p class="tab-links"onclick="opentab('key projects')">key projects</p>
+                                    <p class="tab-links"onclick="opentab('certifications')">certifications</p>
+                                </div>
+                                <div class="tab-contents active-tab" id="Skills & Expertise">
+                                    
+                                        <ul>
+                                            <li><span>Programming Languages:</span> <br>PHP, JavaScript, Java, CSS, MySQL, HTML</li>
+                                            <li><span>Operating Systems:</span><br> linux, Windows,</li>
+                                            <li><span>IT Infrastructure & Networking:</span><br> Server virtualization(ESXi, Proxmox), servers(HP proliant), Sophos XGS, 3CX and yestar PBX systems</li>
+                                            <li><span>Software & Platforms:</span><br>Microsoft 365, Microsoft Power apps, Microsoft Azure, Microsoft power bi, Microsoft SQL server, Dynamics 365 CRM, SYSPRO ERP(Administrator)</li>
+                                            <li><span>Cybersecurity:</span><br> Sophos Certification, Network Security, Firewall Management</li>
+                                            <li><span>Project Management:</span> <br>IT Budgeting, Business Process Automation, IT software develpment, IT Talent Development</li>
                                 
-                            <ul>
-                                <li><span>Undergraduate Bachelor's of Science Degree in Informaation Communication Technology</span></li>
-                                <li><span>Sophos Certified Administrator</span></li>
-                                <li><span>Microsoft 365 Administrator</span></li>
-                                <li><span>Sever virtualization with EXSi & Proxmox</span></li>
-                                <li><span>Cybersecurity Fundamentals</span></li>
-                                <li><span>Sypro ERP Administrator</span></li>
-                            </ul>
+                                        </ul>
+                                </div>
+
+                                <div class="tab-contents"id="key projects">
+                                    
+                                    <ol>
+                                        <li><span>CRM Customization</span></li>
+                                            <ul>
+                                                <li>Successfully implemented and customized Microsoft Dynamics CRM to streamline customer managment and automate workflows.</li>
+                                                <li>Developed JavaScript functions for form events, calculations, and data retrieval</li>
+                                            </ul>
+                                        <li><span>Logistics Management System</span></li>
+                                            <ul>
+                                                <li>Led the Development and deployment of an in house logistics managment system to track and optimize company assets.</li>
+                                                <li>Buil an backend in PHP and a JavaScript-powerd frontend with interactive forms.</li>
+                                            </ul>
+                                        <li><span>Business Continuity Planning for IT systems</span></li>
+                                            <ul>
+                                                <li>Developed a comprehensive business continuity plan involving Infrastructure, network security and disaster recovery for critical IT systems</li>
+                                                <li>Drafted and implemented IT Polycies</li>
+                                            </ul>
+                                        <li><span>Infrastracture Modernization</span></li>
+                                            <ul>
+                                                <li>Integrated new IPs into the company’s main network, improving connectivity and network performance.</li>
+                                                <li>Upgraded and optimized hardware for better efficiency and security.</li>
+                                            </ul>
+                                        <li><span>Trade Shops Expansion</span></li>
+                                            <ul>
+                                                <li>Explored and strategized IT solutions to support the growth of Danco Plastics' trade shops in  Ruiru and Mombasa</li>
+                                                <li>Evaluated ERP and CRM integration for better inventory and customer management.</li>
+                                            </ul>
+                                    </ol>
+                            </div>
+
+                            
+                            <div class="tab-contents" id="certifications">
+                                    
+                                <ul>
+                                    <li><span>Undergraduate Bachelor's of Science Degree in Informaation Communication Technology</span></li>
+                                    <li><span>Sophos Certified Administrator</span></li>
+                                    <li><span>Microsoft 365 Administrator</span></li>
+                                    <li><span>Sever virtualization with EXSi & Proxmox</span></li>
+                                    <li><span>Cybersecurity Fundamentals</span></li>
+                                    <li><span>Sypro ERP Administrator</span></li>
+                                </ul>
+                        </div>
+                        
+                    </div>
+                </div> 
+        </div>
+
+        <!-----------Services------------->
+        <a id="services"></a>
+        <div class="services">
+                <div class="container">
+                    <h1 class="sub-title">My Services</h1>
+                    <div class="services-list">
+                        <div>
+                            <i class="bi bi-braces"></i>
+                            <h2>Custom Software Development</h2>
+                            <p>Tailored web and desktop applications to streamline business processes.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div>
+                            <i class="bi bi-amazon"></i>
+                            <h2>Cloud & Virtualization Solutions </h2>
+                            <p>Deployment and maintenance of cloud-based services and virtualized environments.</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div>
+                            <i class="bi bi-cpu"></i>
+                            <h2>Business Process Automation </h2>
+                            <p>Enhancing efficiency through workflow automation.</p>
+                            <a href="#">Learn More</a>
+                    </div>
+                </div>
+        </div>
+        <!-----------portfolio------------->
+        <a id="portfolio"></a>
+        <div class="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/website.png">
+                        <div class="layer">
+                            <h3>Web-Based Product Data Management System</h3>
+                            <p>Developed a web-based system for managing product data, including inventory tracking and reporting.</p>
+                            <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+                        </div>
                     </div>
                     
+                    
+                    <div class="work">
+                        <img src="images/app.png">
+                        <div class="layer">
+                            <h3>Mobile Application for Logistics Management</h3>
+                            <p>Created a mobile app to facilitate logistics management, including real-time tracking and reporting.</p>
+                            <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="work">
+                        <img src="images/machine.png">
+                        <div class="layer">
+                            <h3>CRM Customization & Implementation</h3>
+                            <p>Developed and customized Microsoft Dynamics CRM to streamline customer management and improve sales processes.</p>
+                            <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+                        </div>
+                    </div>
                 </div>
-            </div> 
-      </div>
+            </div>
+        </div>
 
-      <!-----------Services------------->
 
-      <div class="services">
-            <div class="container"></div>
-      </div>
+    <script>
+        // JavaScript for the tab functionality
+        // JavaScript for smooth scrolling to sections
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+                });
+            }
+            });
+        });
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
 
-  <script>
-
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
         }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-  </script>
 
-    <div class="contact">
-        <h2>Contact</h2>
-        <ul>
-            <li><strong>Email: </strong>chombaerickdickson@gmail.com</li>
-            <li><strong>Phone: </strong>+254704855562</li>
-            <li><strong>LinkedIn: </strong><a href="https://www.linkedin.com/in/erick-chomba-898a17115/">Erick Chomba</a></li>
-            <li><strong>GitHub: </strong><a href="https://github.com/ch0mba">ch0mba</a></li>
-            <li><strong>Website:</strong><a href="https://eclast.co.ke/portfolio">Portfolio</a></li>
-        </ul>
-    </div>
+    </script>
+    <!-----------contact------------>
+        <a id="contact"></a>
+        <div class="contact" id="contact">
+            <div class="container">
+            <h1 class="sub-title">Contact Me</h1>
+            <div class="row">
+                <div class="contact-info">
+                <ul>
+                    <li><i class="bi bi-envelope"></i> <strong>Email:</strong> chombaerickdickson@gmail.com</li>
+                    <li><i class="bi bi-phone"></i> <strong>Phone:</strong> +254704855562</li>
+                    <li><i class="bi bi-linkedin"></i> <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/erick-chomba-898a17115/">Erick Chomba</a></li>
+                    <li><i class="bi bi-github"></i> <strong>GitHub:</strong> <a href="https://github.com/ch0mba">ch0mba</a></li>
+                    <li><i class="bi bi-globe"></i> <strong>Website:</strong> <a href="https://eclast.co.ke/portfolio">Portfolio</a></li>
+                </ul>
+                </div>
+                <div class="contact-form">
+                <form action="https://formspree.io/f/your-form-id" method="POST">
+                    <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                </div>
+            </div>
+            </div>
+        </div>
 
-    <div class="showcase"></div>
-
-    <footer><p>&copy; 2025 Erick Chomba. All rights reserved</p></footer>
+        <footer><p>&copy; 2025 Chomba. All rights reserved</p></footer>
+    </body>
+    <script scr="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js"></script>
+</html>
