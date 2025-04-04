@@ -245,6 +245,7 @@ body{
 #portfolio{
    padding: 50px 0;
    width: 100%;
+   background-size: cover;
 
 }
 .work-list{
