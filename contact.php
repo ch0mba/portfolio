@@ -1,11 +1,11 @@
 <?php
 // Database connection
-$host = 'localhost:3306'; // Adjust the port if necessary
-$dbname = 'portfoliodb';
+$host = 'localhost'; // Adjust the port if necessary
+$database = 'portfoliodb';
 $username = 'root';
 $password = '';
 
-$conn = new mysqli($host, $username, $password, $dbname);
+$conn = new mysqli($host, $username, $password, $database);
 
 // Handle form submission
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -23,6 +23,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("sss", $name, $email, $message);
     if ($stmt->execute()) {
         echo "Message sent successfully!";
+        // Delay before redirection
+        sleep(3);
+                
+        // Redirect to home page
+        header("Location: index.html");
+        exit();
+
     } else {
         die("Error saving message.");
     }
