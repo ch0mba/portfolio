@@ -39,20 +39,20 @@ Installation & Setup
 
 Clone this repository:
 
-git clone https://github.com/yourusername/portfolio.git
+git clone [https://github.com/yourusername/portfolio.git](https://github.com/ch0mba/portfolio.git)
 
-Set up a MySQL database and import database.sql.
+Set up a MySQL database and import potfoliodb.sql.
 
 Configure database connection in config.php:
 
 $host = "localhost";
 $user = "root";
 $password = "yourpassword";
-$dbname = "portfolio_db";
+$databasename = "portfoliodb";
 
 Run the project on a local server (e.g., XAMPP, WAMP, or LAMP).
 
-Access the website via http://localhost/portfolio.
+Access the website via http://localhost/portfolio/index.html.
 
 Usage
 
