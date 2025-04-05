@@ -67,4 +67,4 @@ This project is open-source under the MIT License.
 
 Contact
 
-For any inquiries, reach out via the contact form or email: your-email@example.com.
+For any inquiries, reach out via the contact form or email: chombaerickdickson@gmail.com.
